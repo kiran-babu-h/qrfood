@@ -12,7 +12,7 @@ CORS(app)
 # PostgreSQL configuration using environment variables
 # =======================
 DB_USER = os.environ.get("DB_USER", "postgres")
-DB_PASS = os.environ.get("DB_PASS", "password")
+DB_PASS = os.environ.get("DB_PASS", "kiran123")
 DB_HOST = os.environ.get("DB_HOST", "localhost")
 DB_PORT = os.environ.get("DB_PORT", "5432")
 DB_NAME = os.environ.get("DB_NAME", "qr_food")
@@ -113,3 +113,4 @@ if __name__ == "__main__":
     with app.app_context():
         db.create_all()  # Creates table if it doesn't exist
     app.run(host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
+
